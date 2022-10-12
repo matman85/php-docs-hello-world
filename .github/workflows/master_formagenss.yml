@@ -19,7 +19,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.0'
+          php-version: '7.4'
 
       - name: Check if composer.json exists
         id: check_files
@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'formagenss'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_375A0618AA0B4BB6B53631EF469EB54E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_225447DD2E1D4CF582A8B86A3E1478D0 }}
           package: .
